@@ -14,7 +14,7 @@ try {
     req.userid=decoded.userid;
     next();
 } catch (error) {
-    console.log("error");
+    console.log("error", error);
     
     return res.status(403).json({msg:"authorization ending error"})
 }
